@@ -5,8 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
- * Hello world!
- *
+ * 
+ * @author Administrator
+ * 2017年11月1日 下午10:18:50
+ * 学以致用
  */
 @SpringBootApplication
 public class Application {
