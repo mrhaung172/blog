@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="zh">
+<head th:fragment="head">
+    <meta charset="utf-8">
+    <title>EumJi | 博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="本站是EumJi基于hexo博客主题+spring-boot作为后端开发而成.内容涵盖Java基础、JAVA的web框架、等其他技术的分享。也会包含一些个人在生活中的笔记或者有意思的事情.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="EumJi | 博客">
+    <meta property="og:url" content="http://www>eumji025.com">
+    <meta property="og:site_name" content="EumJi | 博客">
+    <meta property="og:description" content="本站是EumJi基于hexo博客主题+spring-boot作为后端开发而成。内容涵盖Java基础、JAVA的web框架、等其他技术的分享。也会包含一些个人在生活中的笔记或者有意思的事情.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="EumJi | 博客">
+    <meta name="twitter:description" content="本站是EumJi基于hexo博客主题+spring-boot作为后端开发而成.内容涵盖Java基础、JAVA的web框架、等其他技术的分享。也会包含一些个人在生活中的笔记或者有意思的事情.">
+    <meta name="keywords" content="Spring Boot, Spring,Linux,Java,Hadoop" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/about.me.css">
+    <style>
+        a{
+            color: #000;
+        }
+        #footer{
+            position: fixed;
+            bottom: 0;
+            width:100%;
+            height: 30px;
+            background-color: #fbfffc;
+        }
+        body{
+            height: 100%;
+        }
+        .main{
+            position: relative;
+
+        }
+
+    </style>
+
+    <script async type="text/javascript" color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+</head>
+
+<body>
+<header id="header" th:replace="blog/part/header :: header">
+</header>
+<div class="main">
+
+    <div class="account">
+        <div class="account-info">
+            <div class="account-top">
+                <div class="account-top-left">
+                    <img src="/image/avatar.jpg" alt="">
+                </div>
+                <!--<div class="account-top-right">
+                    <h2>李靖 </h2>
+                    <p>java Developer</p>
+                </div>-->
+                <div class="clear"></div>
+            </div>
+            <div class="account-bottom">
+                <div class="tabs">
+                    <nav>
+                        <a><span> </span>简介</a>
+                        <a><span class="icon1"></span>技能</a>
+                        <a><span class="icon2"></span>爱好</a>
+                        <a><span class="icon3"></span>联系我</a>
+                        <a><span class="icon4"></span>其他</a>
+                        <option></option>
+                        <option></option>
+                    </nav>
+                    <div class="content">
+                        <div class="text">
+                            <div class="text-right">
+                                <h4>Introduction</h4>
+                                <div class="clear"></div>
+                                <p>闲的蛋疼，借鉴一下.</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="text">
+                            <div class="text-right">
+                                <h4>Skills</h4>
+                                <section class="container">
+                                    <div class="progress">
+                                        <span style="width: 40%;"><span>html</span></span>
+                                    </div>
+
+                                    <div class="progress">
+                                        <span class="green" style="width: 50%;"><span>js</span></span>
+                                    </div>
+
+                                    <div class="progress">
+                                        <span class="orange" style="width: 50%;"><span>hadoop</span></span>
+                                    </div>
+
+                                    <div class="progress">
+                                        <span class="red" style="width: 60%;"><span>linux</span></span>
+                                    </div>
+
+                                    <div class="progress">
+                                        <span class="blue" style="width: 70%;"><span>java</span></span>
+                                    </div>
+                                    <div class="progress">
+                                        <span style="width: 15%;"><span>python</span></span>
+                                    </div>
+                                    <div class="progress">
+                                        <span style="width: 0%;"><span>go</span></span>
+                                    </div>
+                                </section>
+                                <div class="text_wrap" hidden>
+                                </div >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="text">
+
+                            <div class="text-right">
+                                <h4>Hobby</h4>
+                                <div class="Hobby">
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="content">
+                        <div class="text ">
+                            <div class="text-right">
+                                <h4>Connection</h4>
+                                <div class="myinfo">
+                                    <table>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="text ">
+
+                            <div class="text-right">
+                                <h4>Ohter Talk</h4>
+                                <p>祝前程似锦，工作顺利，学业有成，爱情美满，身体健康！！！</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer id="footer" th:replace="blog/part/footer :: footer"></footer>
+<script src="/js/jquery.min.js"></script>
+<script>
+    $(function () {
+        $(".search-form").attr("hidden",true);
+        $("#search-form-wrap").attr("hidden",true);
+        $('.tabs nav a').on('click', function () {
+            show_content($(this).index());
+        });
+        show_content(0);
+        function show_content(index) {
+            // Make the content visible
+            $('.tabs .content.visible').removeClass('visible');
+            $('.tabs .content:nth-of-type(' + (index + 1) + ')').addClass('visible');
+
+            // Set the tab to selected
+            $('.tabs nav a.selected').removeClass('selected');
+            $('.tabs nav a:nth-of-type(' + (index + 1) + ')').addClass('selected');
+        }
+    });
+    addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    }
+</script>
+</body>
+</html>
